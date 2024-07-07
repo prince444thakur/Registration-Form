@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Error</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #080710;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(100px);
+        }
+        .shape:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(#1845ad, #23a2f6);
+            top: -50px;
+            left: -100px;
+        }
+        .shape:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to right, #ff512f, #f09819);
+            bottom: -50px;
+            right: -50px;
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.13);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: 500;
+            line-height: 42px;
+        }
+        p {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+        .crossmark {
+            font-size: 50px;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+        .button {
+            margin-top: 30px;
+            background-color: #ffffff;
+            color: #080710;
+            padding: 15px 20px;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+    <div class="container">
+        <div class="crossmark">&#10008;</div>
+        <h1>Registration Error</h1>
+        <p>There was an error during registration. Please try again.</p>
+        <a href="/" class="button">Back</a>
+    </div>
+</body>
+</html>
